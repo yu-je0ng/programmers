@@ -79,10 +79,10 @@ def solution(numbers, hand):
             left_d = 0
             right_d = 0
             
-            # 좌표 거리 계산
-            for a, b, c in zip(loc_L, loc_R, now):
-                left_d += abs(a-c)
-                right_d += abs(b-c)
+						# 좌표 거리 계산
+            for m, n, j in zip(loc_L, loc_R, now):
+                left_d += abs(m-j)
+                right_d += abs(n-j)
             
             # 왼손이 더 가까운 경우
             if left_d < right_d:
